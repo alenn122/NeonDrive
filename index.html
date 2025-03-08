@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- FAVICON -->
+        <link rel="shortcut icon" href="src/images/logo.png"
+            type="image/x-icon">
+        <!-- FONTAWESOME -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- TAILWIND CSS -->
+        <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+        <!-- MAIN CSS -->
+        <link rel="stylesheet" href="input.css">
+        <title>Cars</title>
+    </head>
+    <body class="bg-gradient-to-bl from-zinc-900 via-fuchsia-900
+        to-zinc-900">
+        <header>
+            <!-- NAVIGATION -->
+            <a href="#" class="logo"><img src="src/images/logo.png" alt=""></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#info">Info</a></li>
+                <li><a href="#showcase">Showcase</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ul>
+
+            <!-- NAV MENU -->
+            <div class="fa-solid fa-bars" id="navmenu"></div>
+        </header>
+        <!-- HOME SECTION -->
+        <div
+            class="bg-[linear-gradient(rgba(0,0,0,0.5),rgba(55,0,55,0.5)),url('src/images/home.jpg')]
+            bg-cover bg-center bg-no-repeat h-screen flex items-center
+            justify-center" id="home">
+            <h1 class="text-[15vw] text-white text-3d">NEONDRIVE</h1>
+        </div>
+        <!-- INFO SECTION -->
+        <section id="info">
+            <div class="container mx-auto px-8">
+                <h1 class="text-center text-5xl title">About</h1>
+                <!-- BOXES -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3
+                    gap-4">
+                    <div class="bg-glass p-3 text-center" id="sr1">
+                        <img class="w-[100px] mx-auto"
+                            src="src/images/about1.png" alt="">
+                        <h1 class="text-2xl">Performance</h1>
+                        <p class="text-xl">The Car is built for speed and
+                            precision. With a mid-engine layout,
+                            high-performance V8 engine, and lightweight chassis,
+                            it delivers exhilarating acceleration and
+                            track-ready handling.</p>
+                    </div>
+
+                    <div class="bg-glass p-3 text-center" id="sr2">
+                        <img class="w-[100px] mx-auto"
+                            src="src/images/about2.png" alt="">
+                        <h1 class="text-2xl">Aerodynamic Design</h1>
+                        <p class="text-xl">Every curve and vent is engineered
+                            for maximum aerodynamics. The aggressive stance, low
+                            drag coefficient, and functional air vents ensure
+                            optimal downforce and cooling, making it a true
+                            supercar on the road.</p>
+                    </div>
+
+                    <div class="bg-glass p-3 text-center" id="sr3">
+                        <img class="w-[100px] mx-auto"
+                            src="src/images/about3.png" alt="">
+                        <h1 class="text-2xl">Advanced Technology</h1>
+                        <p class="text-xl">Experience the future of driving with
+                            a digital cockpit, performance data recorder, and
+                            driver-focused controls. Stay connected with Apple
+                            CarPlay, Android Auto, and a premium Bose sound
+                            system for the ultimate ride.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SHOWCASE SECTION -->
+        <section id="showcase">
+            <div class="container mx-auto p-10">
+                <h1 class="text-center text-5xl title">Showcase</h1>
+                <div class="flex flex-col md:flex-row items-center gap-4">
+                    <div class="md:w-1/2 flex justify-center" id="sr1">
+                        <img class="w-[500px]" src="src/images/showcase.png"
+                            alt="">
+                    </div>
+                    <div class="md:w-1/2 md:text-left" id="sr2">
+                        <h1 class="text-2xl"> Neon Drive: The Future of Night
+                            Racing</h1>
+                        <p class="text-xl">Step into a world where futuristic
+                            cars, neon-lit streets, and adrenaline-pumping speed
+                            collide. Neon Drive is more than just a ride—it’s an
+                            immersive journey through the night, where the glow
+                            of the city meets the roar of the engine.</p>
+                        <p class="text-xl">Whether you're chasing top speeds,
+                            drifting through cyberpunk-inspired streets, or
+                            simply soaking in the electrifying ambiance, every
+                            moment in Neon Drive is designed to ignite your
+                            passion for high-performance driving.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- GALLERY SECTION -->
+        <section id="gallery">
+            <div class="container mx-auto px-10">
+                <h1 class="text-center text-5xl title">Gallery</h1>
+                <div class="grid grid-cols-4 gap-4 auto-rows-[200px]
+                    md:auto-row-[250px]">
+                    <img class="col-span-1 row-span-2 rounded-lg object-cover
+                        w-full h-full" id="sr1" src="src/images/g1.jpg" alt="">
+                    <img class="col-span-2 row-span-2 rounded-lg object-cover
+                        w-full h-full" id="sr2" src="src/images/g2.jpg" alt="">
+                    <img class="col-span-1 row-span-3 rounded-lg object-cover
+                        w-full h-full" id="sr3" src="src/images/g3.jpg" alt="">
+                    <img class="col-span-2 row-span-2 rounded-lg object-cover
+                        w-full h-full" id="sr4" src="src/images/g4.jpg" alt="">
+                    <img class="col-span-1 row-span-2 rounded-lg object-cover
+                        w-full h-full" id="sr5" src="src/images/g5.jpg" alt="">
+                    <img class="col-span-1 row-span-3 rounded-lg object-cover
+                        w-full h-full" id="sr6" src="src/images/g6.jpg" alt="">
+                    <img class="col-span-1 row-span-2 rounded-lg object-cover
+                        w-full h-full" id="sr7" src="src/images/g7.jpg" alt="">
+                    <img class="col-span-2 row-span-2 rounded-lg object-cover
+                        w-full h-full" id="sr8" src="src/images/g8.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- FOOTER SECTION -->
+        <footer>
+            <div class="text-center py-5 border-t border-pink-500">
+                <p class="text-center">Designed and Developed by <a href="#">alenn</a></p>
+            </div>
+        </footer>
+
+
+
+
+
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

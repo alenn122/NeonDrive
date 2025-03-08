@@ -1,0 +1,146 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
+
+* {
+    font-family: "Iceland", sans-serif;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    line-height: 1.8;
+    color: #e7e7e7;
+}
+
+:root {
+    --primary-color: #A91079;
+    --secondary-color: #570A57;
+    --tertiary-color: #F806CC;
+    --quantenary-color: #2E0249;
+    --quinary-color: rgba(55, 0, 55, 0.24);
+}
+
+/* SECTION */
+section {
+    padding: 120px 0;
+}
+/* CUSTOM SCROLL BAR */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #161616;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--tertiary-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--tertiary-color);
+    box-shadow: 0 0 15px var(--primary-color);
+}
+
+/* CUSTOM NAVIGATION */
+header {
+    position: fixed;
+    width: 94%;
+    top: 3%;
+    left: 3%;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 100px;
+    z-index: 1000;
+    /* From https://css.glass */
+    background: rgba(169, 16, 121, 0.32);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.4px);
+    -webkit-backdrop-filter: blur(8.4px);
+    border: 1px solid rgba(169, 16, 121, 0.86);
+}
+
+.logo {
+    width: 60px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-links a {
+    padding: 10px 20px;
+    font-size: 24px;
+    border-radius: 8px;
+}
+
+.nav-links a:hover {
+    background-color: var(--tertiary-color);
+    border-radius: 8px;
+}
+
+#navmenu {
+    font-size: 2rem;
+    display: none;
+}
+
+@media (max-width: 1060px) {
+    #navmenu {
+        display: initial;
+    }
+
+    header {
+        padding: 20px 30px;
+    }
+
+    .nav-links {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 35%;
+        top: 100%;
+        right: -100%;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 8px;
+        z-index: 1001;
+        background-color: var(--primary-color);
+        transition: all .3s;
+    }
+
+    .nav-links a {
+        display: block;
+    }
+
+    .nav-links.open {
+        right: 0;
+    }
+}
+
+.text-3d {
+    text-shadow:
+        5px 5px 0 var(--primary-color),
+        10px 10px 0 var(--secondary-color),
+        10px 10px 20px var(--tertiary-color);
+}
+
+.title {
+    text-shadow:
+        2px 5px 0px var(--primary-color),
+        2px 5px 0px var(--secondary-color),
+        5px 10px 10px var(--tertiary-color);
+}
+
+.bg-glass {
+    /* From https://css.glass */
+    background: rgba(169, 16, 121, 0.32);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.4px);
+    -webkit-backdrop-filter: blur(8.4px);
+    border: 2px solid rgba(169, 16, 121, 0.86);
+    border-radius: 8px;
+}
